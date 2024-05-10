@@ -1,0 +1,59 @@
+{%load static%}
+<html>
+    <head>
+ 
+        <link rel="stylesheet" href="{% static 'css/about.css'%}">
+        
+        <title>About</title>
+
+    </head>
+    <body style="background-image :url('{% static '/img/abbb.jpeg'%}');">
+        <div class="parent">
+        
+        
+            <nav class="nav">
+                <div class="nav-logo">
+                    <p>Capsule</p>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a  class="link" href="{% url 'home' %} ">Home</a></li>
+                        <li><a  class="link active"  href="{% url 'about' %}"> About</a></li>
+                        <li><a  class="link active" href="{% url 'services' %}">Services</a></li>
+                        <li><a  class="link"  href="{% url 'contactus' %}">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="nav-button">
+                    <button class="btn white-btn" id="loginBtn" onclick="location.href='{% url 'login' %}'">LOG IN</button>
+                    <button class="btn" id="registerBtn" onclick="location.href='{% url 'index' %}'">SIGN UP</button>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+                </div>
+            </nav>
+            <div class="content">
+                <h2><i>Our Services ...</i></h2>
+                <p>At Capsule, we understand the value of time
+
+                    and the importance of accessibility. Through
+                     
+                    our streamlined mobile app, you can 
+                    
+                    effortlessly browse, order, and receive a wide
+                    
+                    range of medications and healthcare 
+                    
+                    essentials, all from the comfort of your own
+                    
+                     space. No more long queues or time wasted
+                    
+                    searching for what you need. With Capsule,
+                     
+                    your health is just a tap away.</p>
+
+            </div>
+        </div>
+        
+
+    </body>
+</html>

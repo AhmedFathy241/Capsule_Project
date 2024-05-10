@@ -1,0 +1,213 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/medicine.css'%}">
+    </head>
+    <body>
+        <div class="all">
+            <div class="capsule">
+             <div class="capsule_img" >
+            <img src="{%static 'img/capsule.jpg' {% static '%}" alt="">
+             </div>
+             <div class="capsule_text">
+             <h1>Capsule</h1>
+             </div>
+            </div>
+            <div class="login">
+            <a href="{% url 'login' %}">Login</a>
+            </div>
+        </div>
+    
+
+        <div class="Navbar">
+            <div class="include">
+                <div class="off">
+                    <button class="off_b">offers</button>
+                 </div>
+                 <div class="search">
+                     <input type="text" placeholder="search for product " class="search-p">
+     
+                 </div>
+            </div>
+
+            <div class="icons">
+                <div class="wish">
+                 
+                 <div class="wish-txt">
+                    <a href="{% url 'wish' %}"><p>wishlist</p></a>  
+                 </div>
+                    <div class="wish-img">
+                        <img src="{% static 'img/heart.jpg'%}{% static '" alt="">
+                        </div>
+                 
+                 
+                </div>
+                <span> |</span>
+                <div class="wish">
+                    <div class="wish-txt">
+                        <a href="{% url 'fullcart' %}"><p>cart</p></a> 
+
+                       </div>
+   
+                    <div class="cart-img">
+                        <img src="{% static 'img/cart.jpeg'%}" alt="">
+                    </div>
+                    
+                </div>
+
+            </div>
+
+         </div>
+        
+
+        <div class="container">
+            <div class="c_logo">
+             <img src="{% static 'img/hair.webp'%}" alt="">
+            </div>
+            <div class="c_text">
+             <h2>Hair Care</h2>
+            </div>
+    
+           </div>
+        <!-- categories  -->
+
+    <div class="r1">
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/vatika.webp'%}" alt="" class="centre ">
+            <p>Vatika | Conditioner Hammam </p>
+            <h3>50 EGP</h3>
+            
+                  <button >Add to card</button>
+   
+        </div>
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg' %}" alt="" class="logo">
+            <img src="{% static 'img/hair2.webp' %}" alt="" class="centre ">
+            <p>Trichup | Hair Fall Control Hot Oil</p>
+            <h3> 140 EGP</h3>
+            <button>Add to card</button>
+        </div>
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg' %}" alt="" class="logo">
+            <img src="{% static 'img/vatica2.webp' %}" alt="" class="centre ">
+            <p>Vatika | Naturals Hair Mask & Treatment  </p>
+            <h3>29 EGP</h3>
+            <button>Add to card</button>
+        </div>
+        <div class="clr"></div>
+    </div>
+
+    <!-- الصف التاني  -->
+
+    <div class="r1">
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/loreal-paris-hyaluron-expert-serum-with-hyaluronic-acid-15ml-5mrc-01682717691.webp'%}" alt="" class="centre ">
+            <p>L'Oreal Paris | Hyaluron Expert Serum</p>
+            <h3>195 EGP</h3>
+            <button>Add to card</button>
+            
+        </div>
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/eva2.webp'%}" alt="" class="centre ">
+            <p>Eva Hair Clinic Keratin | Ekeratin Oil </p>
+            <h3>110 EGP</h3>
+            <button>Add to card</button>
+        </div>
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/head.webp'%}" alt="" class="centre ">
+            <p>Head & Shoulders | Smooth & Silky  </p>
+            <h3>119 EGP</h3>
+            <button>Add to card</button>
+        </div>
+        <div class="clr"></div>
+    </div>
+
+     <!-- الصف الثالث  -->
+
+     <div class="r1">
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/clary.webp'%}" alt="" class="centre ">
+            <p>Clary Mist SPF +50 Heat Protection </p>
+            <h3>140 EGP</h3>
+            <button>Add to card</button>
+            
+        </div>
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/color.webp'%}" alt="" class="centre ">
+            <p>Garnier | Color Naturals Hair Color</p>
+            <h3>122 EGP </h3>
+            <button>Add to card</button>
+        </div>
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/lovea.webp'%}" alt="" class="centre ">
+            <p>Lovea | Leave in Hair Conditioner  </p>
+            <h3>370 EGP</h3>
+            <button>Add to card</button>
+        </div>
+        <div class="clr"></div>
+    </div>
+
+    <!-- الصف الرابع   -->
+    <div class="r1">
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/blackvatica.webp'%}" alt="" class="centre ">
+            <p>Vatika | Conditioner Cream Habba</p>
+            <h3>48 EGP</h3>
+            <button>Add to card</button>
+            
+        </div>
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/evahair.webp'%}" alt="" class="centre ">
+            <p>Eva Hair Clinic Keratin | Ekeratin Leave </p>
+            <h3>115 EGP</h3>
+            <button>Add to card</button>
+        </div>
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/mask.webp'%}" alt="" class="centre ">
+            <p>Seropipe | Hair Mask | 300ml  </p>
+            <h3>285 EGP</h3>
+            <button>Add to card</button>
+        </div>
+        <div class="clr"></div>
+    </div>
+
+
+
+    <div class="r1">
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/shampo.webp'%}" alt="" class="centre ">
+            <p>Tresemme | Shampoo Botanix Nourish </p>
+            <h3>195 EGP</h3>
+            <button>Add to card</button>
+            
+        </div>
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/bless-leave-in-conditioner-for-low-porosity-hair-250ml-oslq-01655912802.webp'%}" alt="" class="centre ">
+            <p>Bless | Leave-In Conditioner</p>
+            <h3>75 EGP </h3>
+            <button>Add to card</button>
+        </div>
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/treato-anti-breakage-hair-serum-120ml-gstu-01686167955.webp'%}" alt="" class="centre ">
+            <p>Treato | Anti Breakage Hair Serum</p>
+            <h3>270 EGP</h3>
+            <button>Add to card</button>
+        </div>
+        <div class="clr"></div>
+    </div>
+
+    </body>
+</html>

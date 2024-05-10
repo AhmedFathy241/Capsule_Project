@@ -1,0 +1,67 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Contact Us</title>
+        <meta name="viewport" content="width=device-width,
+          initial-scale=1.0"/>
+        <link rel="stylesheet" href="{%static 'css/contactus.css'%}" />
+    </head>
+    <body style="background-image :url('{% static '/img/contact.jpg'%}');">
+    <div class="images_control_and_content">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>Capsule .</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a class="link " href="{% url 'home' %} ">Home</a></li>
+                    <li><a class="link active" href="{% url 'about' %}"> About</a></li>
+                    <li><a class="link" href="{% url 'services' %}">Services</a></li>
+                    
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn " id="loginBtn"  onclick="location.href='{% url 'login' %}'">LOG IN</button>
+                <button class="btn " id="registerBtn" onclick="location.href='{% url 'index' %}'">SIGN UP</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <div class="text">
+        <span class="span1">Let's Keep In Touch</span>
+        <div class="heart_photo">
+            <img src="{%static 'img/heart.png'%}">
+        </div>
+        
+         </div>
+    <div class="contacts_apps">
+        <div class="face_book">
+            <div class="facephoto">
+                 <img src="{%static 'img/face.png'%}">
+            </div>
+            <div class="face_book_text"> <h4>shaahd@yahoo.com</h4></div>
+           
+        </div>
+        <div class="insta">
+            <div class="facephoto">
+                 <img src="{%static 'img/insta.png'%}">
+            </div>
+            <div class="insta_text"> <h4>shaahd@insta.com</h4></div>
+           
+        </div>
+        <div class="phone">
+            <div class="facephoto">
+                 <img src="{%static 'img/phone.png'%}">
+            </div>
+            <div class="phone_text"> <h4>01025477781</h4></div>
+           
+        </div>
+    </div>
+
+    </div> 
+       
+    </body>
+</html>

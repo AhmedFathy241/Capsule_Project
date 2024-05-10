@@ -1,0 +1,57 @@
+{%load static%}
+<html>
+    <head>
+ 
+        <link rel="stylesheet" href="{% static 'css/about.css'%}">
+        
+        <title>About</title>
+
+    </head>
+    <body style="background-image :url('{% static '/img/abbb.jpeg'%}');">
+        <div class="parent">
+        
+        
+            <nav class="nav">
+                <div class="nav-logo">
+                    <p>Capsule</p>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a  class="link" href="{% url 'home' %} ">Home</a></li>
+                        <li><a  class="link active"  href="{% url 'about' %}"> About</a></li>
+                        <li ><a class="link" href="{% url 'services' %}">Services</a></li>
+                        <li><a  class="link" href="{% url 'login' %}">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="nav-button">
+                    <button class="btn white-btn" id="loginBtn" onclick="location.href='{% url 'login' %}'">LOG IN</button>
+                    <button class="btn" id="registerBtn" onclick="location.href='{% url 'index' %}'">SIGN UP</button>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+                </div>
+            </nav>
+            <div class="content">
+                <h2><i>Who WE Are ?</i></h2>
+                <p>Welcome to Capsule, where healthcare is
+ 
+                    simplified and delivered with utmost care.
+                    
+                    We are not your ordinary pharm 
+                    
+                    we are a compact powerhouse of wellness,
+                    
+                    revolutionizing the way you experience 
+                    
+                    healthcare. With our cutting-edge technolog
+                    
+                    and unwavering commitment to convenience,
+                    
+                    we bring the pharmacy to your fingertips.</p>
+
+            </div>
+        </div>
+        
+
+    </body>
+</html>

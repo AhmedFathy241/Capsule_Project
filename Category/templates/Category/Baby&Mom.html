@@ -1,0 +1,217 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/medicine.css'%}">
+    </head>
+    <body>
+        <div class="all">
+            <div class="capsule">
+             <div class="capsule_img" >
+            <img src="{% static 'img/capsule.jpg'%}" alt="">
+             </div>
+             <div class="capsule_text">
+             <h1>Capsule</h1>
+             </div>
+            </div>
+            <div class="login">
+            <a href="{% url 'login' %}">Login</a>
+            </div>
+        </div>
+
+
+
+        <div class="Navbar">
+            <div class="include">
+                <div class="off">
+                    <button class="off_b">offers</button>
+                 </div>
+                 <div class="search">
+                     <input type="text" placeholder="search for product " class="search-p">
+     
+                 </div>
+            </div>
+
+            <div class="icons">
+                <div class="wish">
+                 
+                 <div class="wish-txt">
+                    <a href="{% url 'wish' %}"><p>wishlist</p></a>
+                 </div>
+                    <div class="wish-img">
+                        <img src="{% static 'img/heart.jpg'%}" alt="">
+                        </div>
+                 
+                 
+                </div>
+                <span> |</span>
+                <div class="wish">
+                    <div class="wish-txt">
+                        <a href="{% url 'fullcart' %}"><p>cart</p></a> 
+                       </div>
+   
+                    <div class="cart-img">
+                        <img src="{% static 'img/cart.jpeg'%}" alt="">
+                    </div>
+                    
+                </div>
+
+            </div>
+
+         </div>
+        
+    
+    
+
+        <div class="container">
+            <div class="c_logo">
+             <img src="{% static 'img/baby.jpg'%}" alt="">
+            </div>
+            <div class="c_text">
+             <h2>Baby&Mom</h2>
+            </div>
+    
+           </div>
+         <!-- navbar -->
+         
+        
+  
+    <!-- <div class="category"> -->
+        <div class="r1">
+            <div class="c1">
+                <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+                <img src="{% static 'img/nunu-baby-prickly-heat-powder-100ml-ijsd-01697481484.webp'%}" alt="" class="centre ">
+                <p>Elevit | Pronatal | 30 Tabs</p>
+                <h3>154 EGP</h3>
+                
+                      <button >Add to card</button>
+       
+            </div>
+            <div class="c1">
+                <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+                <img src="{% static 'img/16163209971610351870shea-creamjpgtxt.webp'%}" alt="" class="centre ">
+                <p>Shea Hair Cream | 150gm</p>
+                <h3>95 EGP</h3>
+                <button>Add to card</button>
+            </div>
+            <div class="c1">
+                <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+                <img src="{% static 'img/1618403662johnsons-gold-shampoo-100ml-chefaa7jpg.webp'%}" alt="" class="centre ">
+                <p>Johnson's | Gold Shampoo </p>
+                <h3>28 EGP</h3>
+                <button>Add to card</button>
+            </div>
+            <div class="clr"></div>
+        </div>
+    
+        <!-- الصف التاني  -->
+    
+        <div class="r1">
+            <div class="c1">
+                <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+                <img src="{% static 'img/16163211831610351748kids-hair-creamjpgtxt.webp'%}" alt="" class="centre ">
+                <p>Penduline | Kids Hair Cream</p>
+                <h3>95 EGP</h3>
+                <button>Add to card</button>
+                
+            </div>
+            <div class="c1">
+                <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+                <img src="{% static 'img/1598544014img-20200827-wa0101jpg.webp'%}" alt="" class="centre ">
+                <p>Sudocrem | 125gm</p>
+                <h3>550 EGP</h3>
+                <button>Add to card</button>
+            </div>
+            <div class="c1">
+                <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+                <img src="{% static 'img/hero-baby-nutrasense-3-400gm-m0ta-01676892840.webp'%}" alt="" class="centre ">
+                <p>Hero Baby | Nutrasense 2 | 400gm </p>
+                <h3>349 EGP</h3>
+                <button>Add to card</button>
+            </div>
+            <div class="clr"></div>
+        </div>
+    
+         <!-- الصف الثالث  -->
+    
+         <div class="r1">
+            <div class="c1">
+                <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+                <img src="{% static 'img/bubbles-baby-plate-with-spoon-and-cover-pink-and-blue-tqf7-01695305934.webp'%}" alt="" class="centre ">
+                <p>Bubbles | Baby Plate with Spoon</p>
+                <h3>145 EGP</h3>
+                <button>Add to card</button>
+                
+            </div>
+            <div class="c1">
+                <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+                <img src="{% static 'img/bubbles-classic-baby-bottle-white-260ml-dyqv-01695307317.webp'%}" alt="" class="centre ">
+                <p>Bubbles | Classic Baby Bottle</p>
+                <h3>110 EGP </h3>
+                <button>Add to card</button>
+            </div>
+            <div class="c1">
+                <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+                <img src="{% static 'img/aPXBNsiA4MIw8uvxS7lB09gFuZ8mKFjmho8M36uF.webp'%}" alt="" class="centre ">
+                <p>Babyjoy Mini Diapers - Size 4 </p>
+                <h3>37 EGP</h3>
+                <button>Add to card</button>
+            </div>
+            <div class="clr"></div>
+        </div>
+    
+        <!-- الصف الرابع   -->
+        <div class="r1">
+            <div class="c1">
+                <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+                <img src="{% static 'img/cerelac-dates-wheat-milk-with-iron-vitamins-probiotics-125gm-01668520067.webp'%}" alt="" class="centre ">
+                <p>Cerelac | Dates Wheat & Milk with Iron</p>
+                <h3>55 EGP</h3>
+                <button>Add to card</button>
+                
+            </div>
+            <div class="c1">
+                <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+                <img src="{% static 'img/pampers-premium-care-pants-diapers-size-5-junior-12-18kg-jumbo-pack-40-diapers-zzyq-01692266970.webp'%}" alt="" class="centre ">
+                <p>Pampers | Premium Care Pants</p>
+                <h3>536 EGP</h3>
+                <button>Add to card</button>
+            </div>
+            <div class="c1">
+                <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+                <img src="{% static 'img/16152816401610353337wipesjpgtxt.webp'%}" alt="" class="centre ">
+                <p>Penduline | Water Baby Wipes  </p>
+                <h3>72 EGP</h3>
+                <button>Add to card</button>
+            </div>
+            <div class="clr"></div>
+        </div>
+    <!-- </div> -->
+    <div class="r1">
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/johnsons-gentle-all-over-baby-wipes-72wipes-mty4-01662644314.webp'%}" alt="" class="centre ">
+            <p>Johnson's | Gentle All Over Baby Wipes</p>
+            <h3>90 EGP</h3>
+            
+                  <button >Add to card</button>
+   
+        </div>
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/nido-1-growing-up-milk-from-1-years-576gm-my2t-01682885515.webp'%}" alt="" class="centre ">
+            <p>Nido | 1+ Growing Up Milk from +1 years</p>
+            <h3>255 EGP</h3>
+            <button>Add to card</button>
+        </div>
+        <div class="c1">
+            <img src="{% static 'img/heart.jpg'%}" alt="" class="logo">
+            <img src="{% static 'img/molfix-diapers-small-pack-midi-comfortfix-9-pcs-size-3-01698844789.webp'%}" alt="" class="centre ">
+            <p>Molfix | Diapers Small Pack Midi Size 3 </p>
+            <h3>70 EGP</h3>
+            <button>Add to card</button>
+        </div>
+        <div class="clr"></div>
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,47 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8" />
+        <title>empty cart</title>
+        <meta name="viewport" content="width=device-width,
+          initial-scale=1.0"/>
+        <link rel="stylesheet" href="{%static 'css/emptycart.css'%}" />
+    </header>
+    <body>
+      <div class="all">
+        <div class="capsule">
+         <div class="capsule_img" >
+        <img src="{%static 'img/capsule.png'%}" alt="">
+         </div>
+         <div class="capsule_text">
+         <h1>Capsule</h1>
+         </div>
+        </div>
+        <div class="login">
+        <a href="">go to previous page ></a>
+        </div>
+    </div>
+    <div class="all_off">
+
+    
+    <div class="emptycartdesign">
+      <div class="emptyphoto">
+        <img src="{%static 'img/empty_cart.jpeg'%}">
+      </div>
+    </div>
+    <div class="emptycartdesign2">
+      <div class="emptytext">
+       <button>
+        <a href="{%url 'home'%}">
+          Start Shopping Now
+        </a>
+       </button>
+      </div>
+    </div>
+  </div>
+
+
+
+    </body>
+</html>
